@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@400;500&display=swap');
+
 /* app/assets/css/main.css */
 
 :root {
@@ -10,10 +12,14 @@
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+h1, .hero-title {
+  font-family: 'Lora', serif;
 }
 
 .layout {
@@ -56,6 +62,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .nav-item {
@@ -79,7 +86,11 @@ body {
 
 .main-content {
   flex: 1;
-  padding: 2rem;
+}
+
+/* Remove padding from main on homepage */
+.main-content:has(.hero-section) {
+    padding: 0;
 }
 
 .footer {
@@ -92,4 +103,94 @@ body {
 
 .footer p {
   margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 500px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--component-bg-color);
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  background-color: var(--component-bg-color);
+  color: var(--text-color);
+  outline: none;
+}
+
+.search-input::placeholder {
+    color: var(--text-color-secondary);
+    opacity: 0.8;
+}
+
+.search-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background-color: var(--primary-accent-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  opacity: 0.9;
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: var(--component-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-basis: 300px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: var(--secondary-accent-color);
+  margin-bottom: 1rem;
 }
