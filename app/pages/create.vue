@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const foodOne = ref('');
-const foodTwo = ref('');
-const description = ref('');
-const tags = ref('');
+const foodOne = ref('')
+const foodTwo = ref('')
+const description = ref('')
+const tags = ref('')
 
 const handleSubmit = () => {
   if (!foodOne.value || !foodTwo.value || !description.value) {
-    alert('Please fill out all required fields.');
-    return;
+    alert('Please fill out all required fields.')
+    return
   }
   
   const comboData = {
@@ -19,13 +19,13 @@ const handleSubmit = () => {
     tags: tags.value.split(',').map(tag => tag.trim()).filter(tag => tag),
   };
 
-  console.log('New Combo Data:', comboData);
+  console.log('New Combo Data:', comboData)
 
   // Clear form
-  foodOne.value = '';
-  foodTwo.value = '';
-  description.value = '';
-  tags.value = '';
+  foodOne.value = ''
+  foodTwo.value = ''
+  description.value = ''
+  tags.value = ''
 };
 </script>
 
