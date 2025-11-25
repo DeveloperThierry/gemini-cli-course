@@ -143,7 +143,7 @@ h1, .hero-title {
   flex-grow: 1;
   padding: 0.8rem 1rem;
   border: 2px solid var(--component-bg-color);
-  border-radius: 8px 0 0 8px;
+  border-radius: 6px 0 0 6px;
   font-size: 1rem;
   background-color: var(--component-bg-color);
   color: var(--text-color);
@@ -157,8 +157,8 @@ h1, .hero-title {
 
 .search-button {
   padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 0 8px 8px 0;
+  border: 2px solid var(--primary-accent-color);
+  border-radius: 0 6px 6px 0;
   background-color: var(--primary-accent-color);
   color: #fff;
   font-size: 1rem;
