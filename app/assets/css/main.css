@@ -194,3 +194,11 @@ h1, .hero-title {
   color: var(--secondary-accent-color);
   margin-bottom: 1rem;
 }
+
+.feature-icon {
+  color: var(--primary-accent-color);
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

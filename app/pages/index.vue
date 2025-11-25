@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { BookOpen, Users, Star } from 'lucide-vue-next';
+</script>
+
 <template>
   <div>
     <div class="hero-section">
@@ -19,6 +23,7 @@
     </div>
     <section class="features-section">
       <div class="feature-card">
+        <BookOpen :size="48" class="feature-icon" />
         <h3 class="feature-title">Discover new flavours</h3>
         <p>
           Explore a world of unexpected taste sensations and find your next
@@ -26,6 +31,7 @@
         </p>
       </div>
       <div class="feature-card">
+        <Users :size="48" class="feature-icon" />
         <h3 class="feature-title">Join the community</h3>
         <p>
           Connect with fellow food enthusiasts, share your own creations, and get
@@ -33,6 +39,7 @@
         </p>
       </div>
       <div class="feature-card">
+        <Star :size="48" class="feature-icon" />
         <h3 class="feature-title">Rate and review</h3>
         <p>
           Help others by rating and reviewing combinations, and climb the
