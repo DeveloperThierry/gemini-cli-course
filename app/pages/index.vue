@@ -47,5 +47,36 @@ import { BookOpen, Users, Star } from 'lucide-vue-next';
         </p>
       </div>
     </section>
+
+    <section class="recent-combos-section">
+      <h2 class="section-title">Recent Combo's</h2>
+      <div class="combo-grid">
+        <div class="combo-card">
+          <h4 class="combo-title">Marmite & Cheese</h4>
+          <p class="combo-description">A classic savory delight, loved by many.</p>
+          <div class="combo-tags">
+            <span class="tag">Savory</span>
+            <span class="tag">Classic</span>
+          </div>
+        </div>
+        <div class="combo-card">
+          <h4 class="combo-title">Maltesers & Salt & Vinegar Crisps</h4>
+          <p class="combo-description">An unexpected sweet and salty crunch.</p>
+          <div class="combo-tags">
+            <span class="tag">Sweet</span>
+            <span class="tag">Salty</span>
+            <span class="tag">Crunchy</span>
+          </div>
+        </div>
+        <div class="combo-card">
+          <h4 class="combo-title">Strawberries & Black Pepper</h4>
+          <p class="combo-description">A surprising burst of sweet and spicy.</p>
+          <div class="combo-tags">
+            <span class="tag">Fruity</span>
+            <span class="tag">Spicy</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
