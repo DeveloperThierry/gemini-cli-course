@@ -5,13 +5,10 @@
         <NuxtLink to="/" class="navbar-brand">FoodSmash</NuxtLink>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <NuxtLink to="/" class="nav-link">Home</NuxtLink>
+            <NuxtLink to="/popular">Popular Combo's</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink to="/about" class="nav-link">About</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink to="/combinations" class="nav-link">Combinations</NuxtLink>
+            <NuxtLink to="/create" class="btn">Create Combo</NuxtLink>
           </li>
         </ul>
       </nav>
