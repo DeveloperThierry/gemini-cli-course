@@ -1,10 +1,19 @@
 /* app/assets/css/main.css */
 
+:root {
+  --background-color: #1A1A2E;
+  --component-bg-color: #2C2C54;
+  --primary-accent-color: #ff74ef;
+  --secondary-accent-color: #86e5ff;
+  --text-color: #EAEAEA;
+  --text-color-secondary: #b0b0b0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .layout {
@@ -14,7 +23,7 @@ body {
 }
 
 .header {
-  background-color: #fff;
+  background-color: var(--component-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 0 2rem;
 }
@@ -29,7 +38,7 @@ body {
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--primary-accent-color);
   text-decoration: none;
 }
 
@@ -46,14 +55,17 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #555;
+  color: var(--text-color-secondary);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  color: var(--primary-accent-color);
+}
+
 .router-link-active {
-  color: #007bff;
+  color: var(--secondary-accent-color);
 }
 
 .main-content {
@@ -62,8 +74,8 @@ body {
 }
 
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--component-bg-color);
+  color: var(--text-color-secondary);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
