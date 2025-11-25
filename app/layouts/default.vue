@@ -5,9 +5,6 @@
         <NuxtLink to="/" class="navbar-brand">FoodSmash</NuxtLink>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <NuxtLink to="/popular">Popular Combo's</NuxtLink>
-          </li>
-          <li class="nav-item">
             <NuxtLink to="/create" class="btn">Create Combo</NuxtLink>
           </li>
         </ul>
