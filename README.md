@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# FoodSmash - Gemini CLI Starter App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a dummy Nuxt 3 application named "FoodSmash" developed primarily to demonstrate and teach the capabilities of the Gemini CLI.
 
-## Setup
+## Project Setup
 
-Make sure to install dependencies:
+This project is built using Nuxt 3. To get it up and running on your local machine, follow these steps:
+
+### 1. Install Dependencies
+
+First, navigate to the project directory in your terminal and install the required Node.js packages.
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 2. Run the Development Server
 
-Start the development server on `http://localhost:3000`:
+Once the dependencies are installed, you can start the development server. This will compile the application and make it accessible in your web browser.
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### 3. Visit the Application
 
-Build the application for production:
+After the development server starts, open your web browser and navigate to the following address:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+http://localhost:3000
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+You should now see the FoodSmash application running.
