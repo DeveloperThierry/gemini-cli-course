@@ -35,6 +35,13 @@ h1, .hero-title {
   border-radius: 6px;
   font-weight: bold;
   letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .header {
@@ -53,7 +60,7 @@ h1, .hero-title {
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--primary-accent-color);
+  color: var(--secondary-accent-color);
   text-decoration: none;
 }
 
@@ -86,6 +93,7 @@ h1, .hero-title {
 
 .main-content {
   flex: 1;
+  padding: 2rem;
 }
 
 /* Remove padding from main on homepage */
@@ -262,4 +270,55 @@ h1, .hero-title {
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* Create Page */
+.create-page {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.page-title {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.create-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.create-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+}
+
+.create-form input[type="text"],
+.create-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--component-bg-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: var(--component-bg-color);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.create-form input[type="text"]:focus,
+.create-form textarea:focus {
+  border-color: var(--primary-accent-color);
+}
+
+.submit-btn {
+  width: auto; /* Changed from 100% */
+  padding: 0.9rem 2rem; /* Adjusted padding for better look with auto width */
+  font-size: 1.1rem;
+  display: block; /* Added to allow margin auto to center */
+  margin: 2rem auto 0 auto; /* Centered with top margin */
 }
