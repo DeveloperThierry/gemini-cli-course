@@ -1,0 +1,18 @@
+description = "create a new UI component and test file"
+
+prompt = """
+Before doing anything, run a shell command to see if there's any uncommitted, unstaged, or untracked changes on the current branch. If there are uncommitted, unstaged, or untracked changes, abort this process and tell the user. Do not go any further.
+
+You will be making a new Vue component for the Nuxt app as described here: {{args}}.
+
+Your job is to:
+
+Derive a safe branch name based on that component description. The format of the branch should be component/slug where slug should be lowercase letters kebab-case and relatively short but descriptive.
+Show the user the branch name.
+Run a shell command to switch to the new branch. If there's uncommitted changes, tell the user about the process and do not continue.
+Create a new test file for the component in the test Nuxt directory and write a small suite of meaningful tests based on the expected behavior of the new component. Do not run the test yet.
+Make the new component in the components directory. The name of the component can be derived from the component description and should be camelCase. Keep file names consistent with existing conventions.
+When the component is created, run the test for the component to make sure they all pass. If some fail, fix the component and rerun the test until they all pass.
+Once everything passes, render examples of the new component in the preview page.
+Briefly summarize what you have done to the user.
+"""

@@ -1,4 +1,0 @@
-description='Summarize the page'
-prompt='''
-Do not write code. Generate summary of the specified page in less than 50 words.
-'''
