@@ -38,7 +38,7 @@ You should now see the FoodSmash application running.
 
 MIT License
 
-Copyright (c) 2024 developerthierry
+Copyright (c) 2026 developerthierry
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
